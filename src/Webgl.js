@@ -30,7 +30,7 @@ export default function Webgl() {
       setDevice('Desktop')
     }
 
-  })
+  }, [])
 
 
   function CameraAnimation() {
@@ -47,24 +47,21 @@ export default function Webgl() {
 
 
   function CameraAnimationMobile() {
-    const { mouse, scene } = useThree()
+    //const { mouse, scene } = useThree()
+    useThree()
     const [looking, setlooking] = useState('center')
     const ref = useRef()
     document.querySelector('.swipe-right').addEventListener('click', () => {
-      {
-        looking == 'left' ?
+        looking === 'left' ?
           ref.current?.reset(true)
           : ref.current?.setLookAt(-1.3, 0, 0, 0, 0, 0, true)
-      }
       setlooking('right')
     })
 
     document.querySelector('.swipe-left').addEventListener('click', () => {
-      {
-        looking == 'right' ?
+        looking === 'right' ?
           ref.current?.reset(true)
           : ref.current?.setLookAt(1.3, 0, 0, 0, 0, 0, true)
-      }
       setlooking('left')
     })
     return (
