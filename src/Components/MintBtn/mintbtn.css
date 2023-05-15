@@ -1,0 +1,55 @@
+.mint-popup {
+    position: absolute;
+    top:100%;
+    width: 70vw;
+    height: 60vh;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background-color: rgb(13, 13, 13);
+    color: #1dbf73;
+    padding: 20px;
+    border: 5px solid #1dbf73;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .popup-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+
+.mint-paragraph{
+    color: #1dbf73;
+    font-size: 14px;
+    padding-top: 15%;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 14px;
+    text-align: center;
+
+  }
+  .mint-link{
+    color: #1dbf73;
+    text-decoration: underline;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10vh;
+  }
+  .mint-a{
+    color: #1dbf73;
+  }
+  .mint-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #1dbf73;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
