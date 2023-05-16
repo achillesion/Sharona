@@ -70,7 +70,7 @@ export function ExploreBtn() {
             Please share your feedback with chatbot.
           </div>
           {/* <a href='www.google.com' className='link' target='_blank'>staging.sharona.io</a> */}
-          <div className='link'><a href='https://www.google.com' target="_blank">staging.sharona.io</a></div>
+          <div className='link'><a href='https://www.google.com' target="_blank" rel="noreferrer">staging.sharona.io</a></div>
           </div>
           </div>)
         : null}
