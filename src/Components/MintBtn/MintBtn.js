@@ -58,19 +58,22 @@ export function MintBtn() {
             <Html>
       {isOpen
         ?  ( <div className="mint-popup">
-          <button className="mint-close-btn" onClick={togglePopUp}>
-            X
-          </button>
+          
           <div className='pop-text'>
           <div className='mint-paragraph'>
-            you are about to enter the sharona 
+          You are about to enter the Sharona 
             decentralized application, currently in 
             beta-testing mode. <br/> <br/>
             Thank you in advance for participating!
             Please share your feedback with chatbot.
           </div>
           {/* <a href='www.google.com' className='link' target='_blank'>staging.sharona.io</a> */}
-          <div className='mint-link'><a href='https://www.google.com' taget="_blank" className='mint-a'>staging.sharona.io</a></div>
+          <div className='mint-link'>
+            <a href='https://www.google.com' taget="_blank" className='mint-a'><i class="bi bi-link-45deg"></i>staging.sharona.io</a>
+            <button className="mint-close-btn" onClick={togglePopUp}>
+            <i class="bi bi-x-circle"></i> close
+          </button>
+          </div>
           </div>
           </div>)
         : null}
