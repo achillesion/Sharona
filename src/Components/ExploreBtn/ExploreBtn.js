@@ -68,7 +68,7 @@ export function ExploreBtn() {
             Please share your feedback with chatbot.
           </div>
           {/* <a href='www.google.com' className='link' target='_blank'>staging.sharona.io</a> */}
-          <div className='link'><a href='https://www.google.com' target="_blank" rel="noreferrer"><i class="bi bi-link-45deg"></i>staging.sharona.io </a>
+          <div className='link'><a href='https://staging.sharona.io' target="_blank" rel="noreferrer"><i class="bi bi-link-45deg"></i>staging.sharona.io </a>
           
           <button className="close-btn" onClick={togglePopUp}>
           <i class="bi bi-x-circle"></i> close

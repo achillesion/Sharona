@@ -33,7 +33,7 @@ export default function MintBtnMobile() {
     })
 
     const handleMintClick = () => {
-      window.open('https://www.google.com', '_blank');
+      window.open('https://staging.sharona.io', '_blank');
     };
 
     return (

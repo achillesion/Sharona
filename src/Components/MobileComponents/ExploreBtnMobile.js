@@ -31,7 +31,7 @@ export default function ExploreBtnMobile() {
     })
 
     const handleExploreClick = () => {
-      window.open('https://www.google.com', '_blank');
+      window.open('https://staging.sharona.io', '_blank');
     };
 
     return (
