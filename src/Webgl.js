@@ -20,8 +20,8 @@ import ExploreMobile from './Components/MobileComponents/ExploreMobile';
 import MintMobile from './Components/MobileComponents/MintMobile';
 import LogoMobile from './Components/MobileComponents/LogoMobile';
 import MainMobileVideo from './Components/MobileComponents/MainMobileVideo';
-import ExploreBtnMobile from './Components/MobileComponents/ExploreBtnMobile';
-import MintBtnMobile from './Components/MobileComponents/MintBtnMobile';
+import ExploreBtnMobile from './Components/ExploreBtn/ExploreBtnMobile';
+import MintBtnMobile from './Components/MintBtn/MintBtnMobile';
 import CameraAnimationMobile from './Components/MobileComponents/CameraAnimationMobile';
 
 export default function Webgl() {
@@ -29,7 +29,7 @@ export default function Webgl() {
   const [device, setDevice] = useState('Desktop')
 
   useEffect(() => {
-    if (window.innerWidth < 550) {
+    if (window.innerWidth < 800) {
       setDevice('Mobile')
     }
     else {
@@ -93,22 +93,22 @@ export default function Webgl() {
         }
 
         {device === 'Desktop'
-          ? <Text font={'Audiowide-Regular.ttf'} scale={[0.5, 0.5, 0.5]} position={[-3.37, 1.8, 0.35]} rotation={[0, Math.PI * 0.45, 0]} >   {/*  This edits top text on images*/}
+          ? <Text font={'Audiowide-Regular.ttf'} scale={[0.5, 0.5, 0.5]} position={[-3.25, 1.5, 0.7]} rotation={[0, Math.PI * 0.45, 0]} >   {/*  This edits top text on images*/}
             EXPLORE
             <meshStandardMaterial color={'#43c1f3'} toneMapped={false} emissive={'#43c1f3'} emissiveIntensity={1} />
           </Text>
-          : <Text font={'Audiowide-Regular.ttf'} scale={[0.26, 0.26, 0.26]} position={[-3.5, 1.07, 0]} rotation={[0, Math.PI * 0.5, 0]} >
+          : <Text font={'Audiowide-Regular.ttf'} scale={[0.3, 0.3, 0.3]} position={[-4, 1.15, 0]} rotation={[0, Math.PI * 0.5, 0]} >
             EXPLORE
             <meshStandardMaterial color={'#43c1f3'} toneMapped={false} emissive={'#43c1f3'} emissiveIntensity={1} />
           </Text>
         }
 
         {device === 'Desktop'
-          ? <Text font={'Audiowide-Regular.ttf'} scale={[0.6, 0.6, 0.6]} position={[3.37, 1.8, 0.5]} rotation={[0, -Math.PI * 0.5, 0]} >   {/*  This edits top text on images*/}
+          ? <Text font={'Audiowide-Regular.ttf'} scale={[0.5, 0.5, 0.5]} position={[3.3, 1.6, 0.5]} rotation={[0, -Math.PI * 0.5, 0]} >   {/*  This edits top text on images*/}
             MINT
             <meshStandardMaterial color={'#1cbe70'} toneMapped={false} emissive={'#1cbe70'} emissiveIntensity={2} />
           </Text>
-          : <Text font={'Audiowide-Regular.ttf'} scale={[0.4, 0.4, 0.4]} position={[3.5, 1.1, 0.07]} rotation={[0, -Math.PI * 0.5, 0]} >
+          : <Text font={'Audiowide-Regular.ttf'} scale={[0.3, 0.3, 0.3]} position={[4.1, 1.2, 0.07]} rotation={[0, -Math.PI * 0.5, 0]} >
             MINT
             <meshStandardMaterial color={'#1cbe70'} toneMapped={false} emissive={'#1cbe70'} emissiveIntensity={2} />
           </Text>

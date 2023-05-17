@@ -3,6 +3,8 @@ import { Text, RoundedBox } from '@react-three/drei';
 import { useRef, useState, } from 'react';
 import { useSpring, animated, config, } from '@react-spring/three';
 import * as THREE from 'three';
+import { Html } from '@react-three/drei';
+import "./MintMobile.css";
 
 
 export default function MintBtnMobile() {
@@ -32,9 +34,10 @@ export default function MintBtnMobile() {
       ref.current.position.lerp(new THREE.Vector3(0.9, -2.5, -2), 0.04)
     })
 
-    const handleMintClick = () => {
-      window.open('https://staging.sharona.io', '_blank');
-    };
+    const [isOpen, setIsOpen] = useState(false);
+    function togglePopUp() {
+      setIsOpen(!isOpen);
+    }
 
     return (
       <animated.group dispose={null} scale={scale}>
@@ -42,7 +45,7 @@ export default function MintBtnMobile() {
           onPointerEnter={Btnhovered}
           onPointerLeave={BtnUnhovered}
           ref={ref}
-          onClick={handleMintClick}
+          onClick={togglePopUp}
           position={[0.9, -1.88, -5]}
           args={[1.3, 0.5, 0.45]} // Width, height, depth. Default is [1, 1, 1]
           radius={0.125} // Radius of the rounded corners. Default is 0.05
@@ -52,6 +55,31 @@ export default function MintBtnMobile() {
           <meshStandardMaterial ref={Btnmaterial} color={'#1cbe70'} toneMapped={false} emissive={'#1cbe70'} emissiveIntensity={0} />
           <Text font={'Audiowide-Regular.ttf'} scale={[0.24, 0.24, 0.24]} position={[0, 0, 0.25]} >
             MINT
+
+            <Html position={[-4, 5, 0]}>
+      {isOpen
+        ?  ( <div className="m-mint-popup">
+          
+          <div className='m-pop-text'>
+          <div className='m-mint-paragraph'>
+          You are about to enter the Sharona 
+            decentralized application, currently in 
+            beta-testing mode. <br/> <br/>
+            Thank you in advance for participating!
+            Please share your feedback with chatbot.
+          </div>
+          {/* <a href='www.google.com' className='link' target='_blank'>staging.sharona.io</a> */}
+          <div className='m-mint-link'>
+            <a href='https://www.google.com' target="_blank" className='mint-a'><i className="bi bi-link-45deg"></i>staging.sharona.io</a>
+            <button className="m-mint-close-btn" onClick={togglePopUp}>
+            <i className="bi bi-x-circle"></i> close
+          </button>
+          </div>
+          </div>
+          </div>)
+        : null}
+    </Html>
+
             <meshStandardMaterial color={'white'} toneMapped={false} emissive={'white'} emissiveIntensity={0.5} />
           </Text>
         </RoundedBox>

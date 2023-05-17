@@ -66,7 +66,7 @@ export const FAQ = () => {
       <button className="faq-btn" onClick={togglePopUp}>FAQ</button>
       {isOpen ? (
         <div className="popup-content">
-          <button className="close-btn" onClick={togglePopUp}>
+          <button className="close-faq-btn" onClick={togglePopUp}>
             X
           </button>
           <h2>FAQs</h2>

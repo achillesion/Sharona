@@ -69,9 +69,9 @@ export function MintBtn() {
           </div>
           {/* <a href='www.google.com' className='link' target='_blank'>staging.sharona.io</a> */}
           <div className='mint-link'>
-            <a href='https://staging.sharona.io' taget="_blank" className='mint-a'><i class="bi bi-link-45deg"></i>staging.sharona.io</a>
+            <a href='https://www.google.com' target="_blank" className='mint-a'><i className="bi bi-link-45deg"></i>staging.sharona.io</a>
             <button className="mint-close-btn" onClick={togglePopUp}>
-            <i class="bi bi-x-circle"></i> close
+            <i className="bi bi-x-circle"></i> close
           </button>
           </div>
           </div>

@@ -4,21 +4,35 @@ import { useRef, useState } from 'react';
 
 function CameraAnimationMobile() {
     useThree()
-    const [looking, setlooking] = useState('center')
+    const [looking, setLooking] = useState('center')
     const ref = useRef()
     document.querySelector('.swipe-right').addEventListener('click', () => {
-        looking === 'left' ?
-          ref.current?.reset(true)
-          : ref.current?.setLookAt(-1.3, 0, 0, 0, 0, 0, true)
-      setlooking('right')
-    })
+      if (looking === 'left') {
+        ref.current?.reset(true);
+        document.querySelector('.swipe-left').style.display = 'block';
+        document.querySelector('.swipe-right').style.display = 'block';
+      } else {
+        ref.current?.setLookAt(-1.3, 0, 0, 0, 0, 0, true);
+        document.querySelector('.swipe-left').style.display = 'block';
+        document.querySelector('.swipe-right').style.display = 'none';
+      }
+      setLooking('right');
+    });
 
     document.querySelector('.swipe-left').addEventListener('click', () => {
-        looking === 'right' ?
-          ref.current?.reset(true)
-          : ref.current?.setLookAt(1.3, 0, 0, 0, 0, 0, true)
-      setlooking('left')
-    })
+      if (looking === 'right') {
+        ref.current?.reset(true);
+        document.querySelector('.swipe-left').style.display = 'block';
+        document.querySelector('.swipe-right').style.display = 'block';
+      } else {
+        
+        ref.current?.setLookAt(1.3, 0, 0, 0, 0, 0, true);
+        document.querySelector('.swipe-left').style.display = 'none';
+      
+      }
+      setLooking('left');
+    });
+    
     return (
       <CameraControls ref={ref} position={[0, -5, 0]} />
     )

@@ -5,16 +5,16 @@ const FooterIcon = () => {
     <div className='social-icons'>
 
 
-  <a href='https://discord.com/channels/@sharonadapp#5857' target="_blank" rel="noreferrer">
+  <a href='https://discord.com/channels/@sharonadapp#5857' target="_blank">
   <i className="bi bi-discord" ></i>
   </a>
-  <a href='https://twitter.com/sharonadapp' target="_blank" rel="noreferrer">
+  <a href='https://twitter.com/sharonadapp' target="_blank">
     <i className="bi bi-twitter"></i>
     </a>
-    <a href='https://www.instagram.com/sharonadapp/' target="_blank" rel="noreferrer">
+    <a href='https://www.instagram.com/sharonadapp/' target="_blank">
     <i className="bi bi-instagram"></i>
     </a>
-    <a href='https://www.facebook.com/SharonaDApp/' target="_blank" rel="noreferrer">
+    <a href='https://www.facebook.com/SharonaDApp/' target="_blank">
     <i class="bi bi-facebook"></i>
     </a>
 
