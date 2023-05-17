@@ -70,7 +70,7 @@ export default function MintBtnMobile() {
           </div>
           {/* <a href='www.google.com' className='link' target='_blank'>staging.sharona.io</a> */}
           <div className='m-mint-link'>
-            <a href='https://www.google.com' target="_blank" className='mint-a'><i className="bi bi-link-45deg"></i>staging.sharona.io</a>
+            <a href='https://staging.sharona.io' target="_blank" rel="noreferrer" className='mint-a'><i className="bi bi-link-45deg"></i>staging.sharona.io</a>
             <button className="m-mint-close-btn" onClick={togglePopUp}>
             <i className="bi bi-x-circle"></i> close
           </button>

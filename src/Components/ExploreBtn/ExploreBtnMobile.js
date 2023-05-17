@@ -32,9 +32,9 @@ export default function ExploreBtnMobile() {
       ref.current.position.lerp(new THREE.Vector3(-0.9, -2.5, -2), 0.04)
     })
 
-    const handleExploreClick = () => {
+    /*const handleExploreClick = () => {
       window.open('https://www.google.com', '_blank');
-    };
+    };*/
 
     const [isOpen, setIsOpen] = useState(false);
     function togglePopUp() {
@@ -72,7 +72,7 @@ export default function ExploreBtnMobile() {
           </div>
           {/* <a href='www.google.com' className='link' target='_blank'>staging.sharona.io</a> */}
           <div className='m-explore-link'>
-            <a href='https://www.google.com' target="_blank" className='m-explore-a'><i className="bi bi-link-45deg"></i>staging.sharona.io</a>
+            <a href='https://staging.sharona.io' target="_blank" rel="noreferrer" className='m-explore-a'><i className="bi bi-link-45deg"></i>staging.sharona.io</a>
             <button className="m-mint-close-btn" onClick={togglePopUp}>
             <i className="bi bi-x-circle"></i> close
           </button>

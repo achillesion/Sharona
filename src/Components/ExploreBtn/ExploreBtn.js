@@ -70,7 +70,7 @@ export function ExploreBtn() {
           {/* <a href='www.google.com' className='link' target='_blank'>staging.sharona.io</a> */}
           <div className='link'>
 
-          <a href='https://www.google.com'><i className="bi bi-link-45deg"></i>staging.sharona.io </a>
+          <a href='https://staging.sharona.io'><i className="bi bi-link-45deg"></i>staging.sharona.io </a>
           
           <button className="close-btn" onClick={togglePopUp}>
           <i className="bi bi-x-circle"></i> close
