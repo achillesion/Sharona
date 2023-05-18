@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from 'react'
 import { RoundedBox } from '@react-three/drei';
 import { useLoader } from '@react-three/fiber'
 import { TextureLoader } from 'three';
-import "../style.css"
 
 export default function MainMobileVideo() {
 

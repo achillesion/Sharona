@@ -31,7 +31,7 @@ const Mint = (props) => {
 
   return (
     //  <Image ref={ref} onPointerEnter={() => video.pause()} onPointerLeave={() => video.play()} toneMapped={false}  position={[3.5,-0.15,0.5]} rotation={[0,-Math.PI * 0.45,0]} scale={[4.5,2.8,1]} url={props.url} tranparent opacity={1} />
-    <Plane name='Right_Image' ref={ref} args={[1.15, 2.2]} onPointerEnter={() => Hovered()} onPointerLeave={() => UnHovered()} toneMapped={false} position={[3.5, -0.15, 0.5]} rotation={[0, -Math.PI * 0.45, 0]} scale={[3.0, 1.2, 1]} url={props.url} tranparent opacity={1}>
+    <Plane name='Right_Image' ref={ref} args={[1.15, 2.2]} onPointerEnter={() => Hovered()} onPointerLeave={() => UnHovered()} toneMapped={false} position={[3.3, -0.15, 0.5]} rotation={[0, -Math.PI * 0.45, 0]} scale={[3.0, 1.2, 1]} url={props.url} tranparent opacity={1}>
       <meshPhysicalMaterial side={THREE.DoubleSide} color={'#1cbe70'} map={texture} />
     </Plane>
   )

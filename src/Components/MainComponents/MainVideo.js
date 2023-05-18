@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react'
 import { useFrame, useLoader } from '@react-three/fiber'
 import { RoundedBox } from '@react-three/drei';
 import { TextureLoader } from 'three';
-import "../style.css"
 
 export default function MainVideo() {
 
